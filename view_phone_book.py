@@ -17,7 +17,8 @@ def data_view_csv_pandas():
         file_writer = csv.writer(w_file, delimiter = ",", lineterminator="\r")
         file_writer.writerow(["Фамилия", "Имя", "Отчество", "Номер_телефона"])
         file_writer.writerows(sorted(row_csv_arr, key=lambda x: x[0]))
-    df = pd.read_csv('data_numbers.csv') 
-    print(df) 
-      
+    df = pd.read_csv('data_numbers.csv')
+    print(df)
+    return df
+     
 #data_view_csv_pandas()
