@@ -18,5 +18,5 @@ def abonent_output():
     else:
         for row in result:
             print(f'Номер телефона: {row[0]}')
-
+         
 #abonent_output()
